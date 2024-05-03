@@ -1,0 +1,272 @@
+
+body {
+	padding: 0;
+    margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* this is variable global */
+:root{
+    --molor: red; 
+}
+.kac{
+    color: white;
+	padding-bottom: 100px;
+    padding-top: 120px;
+    background: #c31432; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#240b36,
+		#c31432
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#240b36,
+		#c31432
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+header h1 {
+    margin-left: 250px;
+}
+h1 span {
+	color: var(--molor);
+}
+header ul {
+	display: flex;
+	list-style: none;
+}
+header ul  li {
+	padding-left: 25px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+header ul li:hover{
+    transform: scale(1.2);
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+
+}
+button{
+    transition: 0.4s;
+
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+
+}
+header button:hover{
+    background-color: var(--molor);
+    color: white;
+}
+.hm,
+.bd button {
+	border: var(--molor) solid 2px;
+	border-radius: 20px;
+	width: 100px;
+	padding: 8px;
+	background-color: transparent;
+	color: black;
+}
+.hm{
+    width: 80px;
+    font-size: 12px;
+    margin-right: 130px;
+    padding: 8px 12px ;
+}
+
+.bd {
+	display: flex;
+	justify-content: center;
+	margin-top: -50px;
+}
+.brt{
+    margin-left: 100px;
+    margin-right: 50px;
+
+
+}
+.img1 {
+	width: 300px;
+	height: 380px;
+	border-radius: 40px;
+	border: 10px solid ;
+    border-color: rgb(255, 0, 0 );
+}
+.bd button {
+	width: 120px;
+	font-size: x-small;
+    margin-left: 20px;
+}
+
+
+.bdd {
+	margin-top: 80px;
+    
+}
+.bdd h1 , h5{
+margin: 10px;
+}
+
+.btt{
+    margin-left: -10px;
+    margin-top: 30px;
+}
+.bd h1{
+    font-size: 42px;
+}
+.dv{
+    color: var(--molor);
+}
+.btt .pfx{
+    background-color: var(--molor);
+}
+.btt button{
+    color: white;
+
+}
+.bd2{
+    
+    display: flex;
+    margin: 50px;
+    color: black;
+    background-color: #eee;
+    padding: 50px 20px 20px 70px;
+    border-radius: 15px;
+
+}
+.bd3{
+    margin-right:200px ;
+    width: 70%;
+    margin-top: 50px;
+}
+.about{
+    font-size: 12px;
+    color: #747272;
+
+}
+.h1h{
+    font-size: 40px;
+    width: 85%;
+
+}
+.bd3 p {
+    width: 74%;
+}
+.bd4{
+    display: flex;
+    justify-content: space-around;
+}
+.bordt{
+    border-top: solid 2px var(--molor) ;
+    margin-right: 40px;
+}
+.hr2{
+    position: absolute;
+    right: 50px;
+    width: 170px;
+}
+.bd2 h1 ,
+.h1h{
+    font-weight: bold;
+}
+.serv{
+    width: 90%;
+    margin: auto;
+}
+.sr {
+    text-align: center;
+    margin-bottom:-5px ;
+}
+.serv2{
+    display: flex;
+    margin-top: 50px;
+}
+
+.devlo , .Analyzing , .Sharing{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.2s;
+    border-radius: 8px;
+    color: rgb(104, 94, 94);
+}
+.serv{
+    padding-bottom: 100px;
+}
+.serv2 p {
+    height: 58px;
+    width: 250px;
+    overflow: hidden;
+    margin: auto;
+}
+.devlo:hover , .Analyzing:hover , .Sharing:hover
+{
+    transform: scale(1.1);
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.serv span{
+    margin-top: 10px;
+    background-color: var(--molor);
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+}
+footer{
+    background-color: #eee;
+    min-height: 250px;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.social img{
+    margin-left: 30px;
+    width: 30px;
+}
+ footer ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 25px;
+    margin-left: -50px;
+}
+footer ul li {
+    padding-left: 60px;
+}
+footer .mail{
+    margin-top: 30px;
+    font-size: x-small;
+    margin-left: 50px;
+}
+.ext{
+    width: 70px;
+    position: absolute;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--molor);
+    color: white;
+    font-weight: bold;
+    left: -100px;
+    transition: 2s ease-out;
+}
+.ex:checked + .ext{
+    left: 500px;
+}
